@@ -16,7 +16,7 @@ syncReduxAndRouter(history, store);
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
-      <Redirect from="/" to="test" />
+      <Redirect from="/" to="home" />
       {routes}
     </Router>
   </Provider>,
