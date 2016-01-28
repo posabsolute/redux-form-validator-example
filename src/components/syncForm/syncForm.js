@@ -25,7 +25,6 @@ const mapDispatchToProps = dispatch => {
 @connect(mapStateToProps, mapDispatchToProps)
 export default class SyncFormComponent extends React.Component {
   componentWillMount() {
-    console.log("TABAR")
     this.validate = validateProps(this, syncModel);
   }
   render() {

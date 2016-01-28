@@ -13,8 +13,6 @@ const mapDispatchToProps = dispatch => {
     ...bindActionCreators(validateActions, dispatch),
     onSubmit: function submit(evt, validate) {
       const form = evt.target;
-      console.log(dispatch);
-      console.log(this)
       validate.formValidate(form.elements).then( () => {
         console.log('form valid');
       }).catch(() => {
