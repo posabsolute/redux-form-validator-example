@@ -30,7 +30,7 @@ export default ({validate, onSubmit}) => (
       </div>
       <div className="form-group">
         <label>range 1-10</label>
-        <input type="text" className={validate.classes('input-line', 'age')} name="range" {...validate} />
+        <input type="text" className={validate.classes('input-line', 'range')} name="range" {...validate} />
         <LabelError field={validate.fieldStore('range')} />
       </div>
       <div className="form-group">
@@ -91,10 +91,6 @@ export default ({validate, onSubmit}) => (
         <LabelError field={validate.fieldStore('country2')} />
       </div>
 
-      <div className="select-multi">
-        <label>select</label>
-
-      </div>
       <button type="submit">submit</button>
     </form>
   </section>

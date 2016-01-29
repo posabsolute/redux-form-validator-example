@@ -1,5 +1,5 @@
 export default {
-  name: 'asyncInputModel',
+  name: 'asyncFormModel',
   // global validate function
   validateAsync: function(form, dispatch) {
     setTimeout( () => {

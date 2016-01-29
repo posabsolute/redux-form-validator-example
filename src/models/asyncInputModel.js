@@ -1,4 +1,4 @@
-const syncModel = {
+export default {
   name: 'asyncInputModel',
   // global validate function
   validate: (form, dispatch) => {
@@ -19,7 +19,7 @@ const syncModel = {
             }else {
               this.reject('value is not equal to test');
             }
-          }, 3000);
+          }, 5000);
         },
       },
     },
@@ -31,5 +31,3 @@ const syncModel = {
     },
   },
 };
-
-export default syncModel;

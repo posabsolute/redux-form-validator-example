@@ -1,24 +1,23 @@
-const syncModel = {
-  name:'syncModel',
+export default {
+  name: 'syncModel',
   // global validate function
   validate: (form, dispatch) => {
+    const valid = (form.username.value === 'test@test.com') ? true : false;
     return {
-      valid:false,
-      errorMessage:'form is not valid override'
-    }
+      valid: valid,
+      errorMessage: 'Email must be test@test.com',
+    };
   },
-  validateErrorMessage: "form is not valid",
+  validateErrorMessage: 'Email must be test@test.com',
   data: {
     'func': {
       validate: {
         required: true,
         func: (value) => {
-          if(value === 'test'){
+          if (value === 'test') {
             return true;
-          }else{
-            return false;
           }
-          
+          return false;
         },
         message: 'This is a custom error message',
       },
@@ -33,7 +32,7 @@ const syncModel = {
       validate: {
         required: true,
         pattern: /^sample/,
-      }
+      },
     },
     'age': {
       validate: {
@@ -62,21 +61,21 @@ const syncModel = {
     'password': {
       validate: {
         required: true,
-        minLength:4,
-        maxLength:10,
+        minLength: 4,
+        maxLength: 10,
       },
     },
     'car': {
       validate: {
         required: true,
-        minChecked:2,
-        maxChecked:3,
+        minChecked: 2,
+        maxChecked: 3,
       },
     },
     'country': {
       validate: {
         required: true,
-        oneOf:['canada', 'us'],
+        oneOf: ['canada', 'us'],
       },
     },
     'country2': {
@@ -87,16 +86,14 @@ const syncModel = {
     'repeatpassword': {
       validate: {
         required: true,
-        equalTo:'password',
+        equalTo: 'password',
       },
     },
     'rangeLength': {
       validate: {
         required: true,
-        rangeLength:[4,10],
+        rangeLength: [4, 10],
       },
     },
   },
 };
-
-export default syncModel;
