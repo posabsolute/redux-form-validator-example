@@ -1,7 +1,7 @@
-Redux Flash Notification Example
+Redux Form Validator Example
 =========================
 
-Show an implementation example for the Redux Flash Notification plugin.
+Show an implementation example for the Redux form validator middleware.
 
 ## Installation
 ```
