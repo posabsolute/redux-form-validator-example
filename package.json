@@ -69,11 +69,11 @@
     "yargs": "^3.18.0"
   },
   "dependencies": {
-    "redux-form-validator": "^2.0.0",
     "react": "^0.14.2",
     "react-redux": "^4.0.0",
     "react-router": "1.0.0-rc4",
     "redux": "^3.0.4",
+    "redux-form-validator": "^2.0.5",
     "redux-react-router": "^1.0.0-beta1",
     "redux-simple-router": "0.0.7",
     "redux-thunk": "^1.0.0"
